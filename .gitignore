@@ -23,6 +23,11 @@ kubeconfig.yaml
 charts/
 .helm/
 
+# Firmware — keep only the final .bin, ignore PlatformIO build artifacts
+firmware/.pio/
+firmware/build/*.elf
+firmware/build/*.map
+
 # OS
 .DS_Store
 Thumbs.db
